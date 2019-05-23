@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255, 0.38);
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__logo {
+    margin-top: 20px;
+    width: 79px;
+    height: 75px;
+    overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    margin-top: 50px;
+
+    &-elem {
+      height: 20px;
+      width: 18px;
+      overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+    }
+  }
+}

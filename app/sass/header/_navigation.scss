@@ -1,0 +1,35 @@
+.header__navigation {
+  margin-top: 50px;
+  width: calc(100% - 79px);
+  padding-left: 223px;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+    li {
+
+        a{
+          color: white;
+          font-family: $MyraidPro;
+          font-size: 20px;
+          font-weight: 400;
+        }
+
+        a:hover {
+          padding-bottom: 35px;
+          border-bottom: 5px solid #11749e;
+        }
+    }
+
+}
+
+.active {
+  padding-bottom: 35px;
+  border-bottom: 5px solid #11749e;
+}
