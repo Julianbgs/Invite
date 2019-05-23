@@ -10,6 +10,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
 html {
   width: 100%;
 }
@@ -193,7 +199,9 @@ textarea:active {
 
 .baner {
   position: relative;
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 100vh;
   background-image: url("../img/baner.png");
@@ -236,6 +244,7 @@ textarea:active {
   width: 100%;
   text-align: center;
   color: white;
+  font-family: "Open Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
@@ -250,6 +259,194 @@ textarea:active {
   left: 47%;
   background-image: url("../img/scroll.png");
   background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.agency {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #11749e;
+  padding-bottom: 130px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.agency__double-elem {
+  position: absolute;
+  width: 185px;
+  height: 176px;
+  top: 111px;
+  left: 42%;
+  background-image: url("../img/double.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.agency__title {
+  width: 100%;
+  text-align: center;
+  margin-top: 170px;
+  font-family: "Gotham Medium";
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.agency__box {
+  width: 100%;
+  margin-top: 130px;
+}
+
+.agency__elem {
+  position: relative;
+}
+
+.agency__elem-img {
+  margin: 0 auto;
+  width: 133px;
+  height: 133px;
+  overflow: hidden;
+}
+
+.agency__elem-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.agency__elem-title {
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-family: "Gotham Medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.agency__elem-descr {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-family: "Myraid Pro";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.about__block-bg {
+  background-color: #222;
+  height: 488px;
+}
+
+.about__block {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding-right: 120px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.about__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 38%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.about__date {
+  position: relative;
+  color: white;
+  font-family: "Gotham Medium";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.about__date:before {
+  position: absolute;
+  top: 2px;
+  right: -20px;
+  content: "";
+  display: inline;
+  width: 1px;
+  height: 18px;
+  background-color: white;
+}
+
+.about__place {
+  color: white;
+  font-family: "Gotham Medium";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.about__title {
+  color: white;
+  font-family: "Gotham Medium";
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.about__descr {
+  color: white;
+  font-family: "Myraid Pro";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.about__sub-descr {
+  color: white;
+  font-family: "Myraid Pro";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about__img {
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.about__bg {
+  width: 100%;
+  height: 488px;
+  left: 100%;
+  top: -377px;
+  position: absolute;
+  background-image: url("../img/about-img1.png");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
