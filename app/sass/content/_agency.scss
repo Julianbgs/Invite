@@ -16,6 +16,11 @@
     background-image: url("../img/double.png");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include breakpoint(max-width 475px) {
+      left: 25%;
+      top: 60px;
+    }
   }
 
   &__title {
@@ -28,11 +33,19 @@
     line-height: 45px;
     text-transform: uppercase;
     color: white;
+
+    @include breakpoint(max-width 475px) {
+      margin-top: 75px;
+    }
   }
 
   &__box {
     width: 100%;
     margin-top: 130px;
+
+    @include breakpoint(max-width 475px) {
+      margin-top: 90px;
+    }
   }
 
   &__elem {
@@ -44,10 +57,10 @@
       height: 133px;
       overflow: hidden;
 
-       img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
 

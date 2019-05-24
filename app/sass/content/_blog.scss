@@ -15,6 +15,10 @@
      background-image: url("../img/simple-b.png");
      background-repeat: no-repeat;
      background-size: contain;
+
+     @include breakpoint(max-width 475px) {
+      left: 35%;
+     }
    }
 
   &__title {

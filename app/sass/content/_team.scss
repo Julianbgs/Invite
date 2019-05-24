@@ -15,6 +15,10 @@
     background-image: url("../img/simple-t.png");
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include breakpoint(max-width 475px) {
+      left: 33%;
+    }
   }
 
   &__title {
@@ -54,6 +58,10 @@
         height: 410px;
         overflow: hidden;
 
+        @include breakpoint(max-width 1024px) {
+        margin: 0 auto;
+        }
+
           img {
             width: 100%;
             height: 100%;
@@ -68,6 +76,14 @@
       padding: 20px 40px 0 40px;
       box-sizing: border-box;
       background-color: white;
+
+      @include breakpoint(max-width 1024px) {
+        left: 26%;
+      }
+
+      @include breakpoint(max-width 475px) {
+        left: 18%;
+      }
 
         &--title {
           width: 100%;
@@ -93,5 +109,16 @@
         margin-top: 0;
       }
     }
+  }
+}
+
+.adaptive {
+  @include breakpoint(max-width 1024px) {
+    width: 50%;
+    margin-bottom: 70px;
+  }
+
+  @include breakpoint(max-width 475px) {
+    width: 100%;
   }
 }

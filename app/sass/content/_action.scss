@@ -18,6 +18,11 @@
     flex-wrap: wrap;
     width: 48%;
 
+    @include breakpoint(max-width 475px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
     &-img {
       width: 69px;
       height: 69px;

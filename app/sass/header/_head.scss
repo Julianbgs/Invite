@@ -5,11 +5,18 @@
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255,255,255, 0.38);
 
+  @include breakpoint(max-width 475px) {
+    border-bottom: none;
+  }
+
   &__wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint(max-width 475px) {
+      display: block;
+    }
   }
 
   &__logo {
@@ -36,11 +43,78 @@
       width: 18px;
       overflow: hidden;
 
+      @include breakpoint(max-width 475px) {
+        display: none;
+      }
+
         img {
           width: 100%;
           height: 100%;
           object-fit: contain;
         }
+    }
+  }
+
+  &__trigger {
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 40px;
+    right: 30px;
+    background-color: #f3f3f3;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .4);
+    z-index: 15;
+    cursor: pointer;
+
+    @include breakpoint(max-width 480px) {
+      display: block;
+    }
+
+    span {
+      display: block;
+      height: 2px;
+      width: 18px;
+      background-color: #000;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+      top: 50%;
+      margin-top: -1px;
+    }
+
+    span:first-of-type {
+      transition: all 0.2s;
+      margin-top: -6px;
+      content: '';
+    }
+    span:last-of-type {
+      transition: all 0.2s;
+      margin-top: 4px;
+      content: '';
+    }
+  }
+
+  &__trigger.js-trigger-active {
+    background-image: linear-gradient(to top, #fe4e3a 0%, #f6373d 50%, #ff5c34 100%);
+
+    span:nth-of-type(2) {
+      display: none;
+    }
+
+    span {
+      background-color: #fff;
+
+      &:first-of-type {
+        transform: rotate(135deg);
+        margin-top: 0;
+      }
+
+      &:last-of-type {
+        transform: rotate(-134deg);
+        margin-top: 0;
+      }
     }
   }
 }

@@ -19,6 +19,10 @@
     width: 50%;
     padding-right: 120px;
     box-sizing: border-box;
+
+    @include breakpoint(max-width 475px) {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -29,6 +33,10 @@
     font-weight: 500;
     line-height: 36px;
     text-transform: uppercase;
+
+    @include breakpoint(max-width 475px) {
+      margin-top: 30px;
+    }
   }
 
   &__descr {
@@ -56,6 +64,10 @@
     box-sizing: border-box;
     margin-bottom: 24px;
 
+    @include breakpoint(max-width 768px) {
+      font-size: 10px;
+    }
+
     &--first-width {
       width: 80%;
     }
@@ -68,6 +80,10 @@
   &__img-block {
     width: 50%;
     margin-top: 100px;
+
+    @include breakpoint(max-width 475px) {
+      width: 100%;
+    }
   }
 
   &__img {
@@ -75,6 +91,14 @@
     height: 651px;
     overflow: hidden;
     margin: 0 auto;
+
+    @include breakpoint(max-width 768px) {
+      width: 370px;
+    }
+
+    @include breakpoint(max-width 475px) {
+      width: 340px;
+    }
 
       img {
         width: 100%;

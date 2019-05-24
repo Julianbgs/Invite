@@ -17,6 +17,14 @@
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 0;
+
+      @include breakpoint(max-width 768px) {
+        font-size: 115px;
+      }
+
+      @include breakpoint(max-width 475px) {
+        font-size: 50px;
+      }
     }
 
   &__sub-title {
@@ -31,6 +39,15 @@
     text-transform: uppercase;
     letter-spacing: 21px;
     margin-left: 20px;
+
+    @include breakpoint(max-width 768px) {
+      margin-left: 0;
+    }
+
+    @include breakpoint(max-width 475px) {
+      font-size: 12px;
+      letter-spacing: 4px;
+    }
   }
 
   &__scroll {
@@ -57,6 +74,10 @@
         background-image: url("../img/scroll.png");
         background-size: contain;
         background-repeat: no-repeat;
+
+        @include breakpoint(max-width 475px) {
+         left: 40%;
+        }
       }
 
   }
