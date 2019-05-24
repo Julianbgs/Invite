@@ -16,6 +16,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Gotham Book';
+  src: url("../fonts/Gotham/GothamBook.ttf") format("truetype");
+  font-weight: 400;
+}
+
 html {
   width: 100%;
 }
@@ -355,6 +361,10 @@ textarea:active {
   height: 488px;
 }
 
+.about__block-bg--mod {
+  background-color: #f3f3f3;
+}
+
 .about__block {
   position: relative;
   float: left;
@@ -362,6 +372,10 @@ textarea:active {
   padding-right: 120px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.about__block--mod {
+  left: 60%;
 }
 
 .about__comment {
@@ -378,11 +392,26 @@ textarea:active {
 .about__date {
   position: relative;
   color: white;
-  font-family: "Gotham Medium";
+  font-family: "Gotham Book";
   font-size: 13px;
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 0;
+}
+
+.about__date--mod {
+  color: #222222;
+}
+
+.about__date--mod:after {
+  position: absolute;
+  top: 2px;
+  right: -21px;
+  content: "";
+  display: inline;
+  width: 1px;
+  height: 18px;
+  background-color: #222222 !important;
 }
 
 .about__date:before {
@@ -398,11 +427,15 @@ textarea:active {
 
 .about__place {
   color: white;
-  font-family: "Gotham Medium";
+  font-family: "Gotham Book";
   font-size: 13px;
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 0;
+}
+
+.about__place--mod {
+  color: #222222;
 }
 
 .about__title {
@@ -416,6 +449,10 @@ textarea:active {
   margin-bottom: 35px;
 }
 
+.about__title--mod {
+  color: #222222;
+}
+
 .about__descr {
   color: white;
   font-family: "Myraid Pro";
@@ -425,12 +462,20 @@ textarea:active {
   margin-bottom: 30px;
 }
 
+.about__descr--mod {
+  color: #222222;
+}
+
 .about__sub-descr {
   color: white;
   font-family: "Myraid Pro";
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.about__sub-descr--mod {
+  color: #222222;
 }
 
 .about__img {
@@ -448,6 +493,177 @@ textarea:active {
   background-image: url("../img/about-img1.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 1920px) {
+  .about__bg {
+    top: -382px;
+  }
+}
+
+.about__new-bg {
+  width: 100%;
+  height: 488px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-image: url("../img/about-img2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blog {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 110px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.blog__elem-b {
+  position: absolute;
+  width: 116px;
+  height: 176px;
+  top: 102px;
+  left: 45%;
+  background-image: url("../img/simple-b.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.blog__title {
+  width: 100%;
+  text-align: center;
+  margin-top: 165px;
+  color: #222;
+  font-family: "Gotham Medium";
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.blog__descr {
+  width: 100%;
+  text-align: center;
+  margin-top: 115px;
+  color: #222;
+  font-family: "Gotham Book";
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 37px;
+  margin-bottom: 75px;
+}
+
+.blog__box {
+  width: 100%;
+}
+
+.blog__elem {
+  position: relative;
+}
+
+.blog__elem-img {
+  width: 265px;
+  height: 265px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.blog__elem-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.blog__elem-title {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #11749e;
+  font-family: "Gotham Medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.blog__elem-descr {
+  width: 100%;
+  text-align: center;
+  color: #222;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.padding {
+  padding: 0 10px;
+}
+
+.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #11749e;
+  padding-bottom: 145px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.action__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 115px;
+}
+
+.action__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 48%;
+}
+
+.action__elem-img {
+  width: 69px;
+  height: 69px;
+  overflow: hidden;
+}
+
+.action__elem-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.action__elem-descr {
+  width: -webkit-calc(100% - 105px);
+  width: calc(100% - 105px);
+  color: white;
+  font-family: "Gotham Book";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
