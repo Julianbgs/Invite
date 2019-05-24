@@ -30,7 +30,14 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
 $MyraidPro:'Myraid Pro';
 $GothamMedium:'Gotham Medium';
 $GothamBook:'Gotham Book';
 $OpenSans:'Open Sans';
+$Roboto:'Roboto';
