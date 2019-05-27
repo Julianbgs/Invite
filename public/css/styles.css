@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @font-face {
   font-family: 'Myraid Pro';
   src: url("../fonts/MyraidPro/MyriadPro-Light.eot") format("embedded-opentype"), url("../fonts/MyraidPro/MyriadPro-Light.woff") format("woff"), url("../fonts/MyraidPro/MyriadPro-Light.ttf") format("truetype");
@@ -26,6 +28,193 @@
   font-family: 'Roboto';
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
+}
+
+.animate {
+  /* Выберем анимацию */
+  -webkit-animation-name: movingBox;
+  animation-name: movingBox;
+  /* Укажем длительность анимации */
+  -webkit-animation-duration: 1300ms;
+  animation-duration: 1300ms;
+  /* Укажем - сколько раз мы хотим
+      повторить анимацию */
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  /* Это приводит к выполнению анимации
+      в обратном порядке на каждой нечётной итерации */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes movingBox {
+  0% {
+    -webkit-transform: translate(0, 200px);
+    transform: translate(0, 200px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+@keyframes movingBox {
+  0% {
+    -webkit-transform: translate(0, 200px);
+    transform: translate(0, 200px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+.r-animate {
+  /* Выберем анимацию */
+  -webkit-animation-name: rightAnimate;
+  animation-name: rightAnimate;
+  /* Укажем длительность анимации */
+  -webkit-animation-duration: 1300ms;
+  animation-duration: 1300ms;
+  /* Укажем - сколько раз мы хотим
+      повторить анимацию */
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  /* Это приводит к выполнению анимации
+      в обратном порядке на каждой нечётной итерации */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes rightAnimate {
+  0% {
+    -webkit-transform: translate(200px, 0);
+    transform: translate(200px, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+@keyframes rightAnimate {
+  0% {
+    -webkit-transform: translate(200px, 0);
+    transform: translate(200px, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+.l-animate {
+  /* Выберем анимацию */
+  -webkit-animation-name: leftAnimate;
+  animation-name: leftAnimate;
+  /* Укажем длительность анимации */
+  -webkit-animation-duration: 1300ms;
+  animation-duration: 1300ms;
+  /* Укажем - сколько раз мы хотим
+      повторить анимацию */
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  /* Это приводит к выполнению анимации
+      в обратном порядке на каждой нечётной итерации */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes leftAnimate {
+  0% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+@keyframes leftAnimate {
+  0% {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+.animate-stop {
+  -webkit-animation-name: stopAnimate;
+  animation-name: stopAnimate;
+  -webkit-animation-duration: 1300ms;
+  animation-duration: 1300ms;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)" !important;
+  opacity: 1 !important;
+}
+
+@-webkit-keyframes stopAnimate {
+  0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+@keyframes stopAnimate {
+  0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    opacity: 0.4;
+  }
+
+  100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    opacity: 0.8;
+  }
+}
+
+.opacity {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
 }
 
 html {
@@ -342,25 +531,34 @@ textarea:active {
   margin-top: 0;
 }
 
+.js-header-fixed {
+  background-color: #23527c;
+  -webkit-box-shadow: 1px 2px 3px rgba(5, 4, 5, 0.33);
+  box-shadow: 1px 2px 3px rgba(5, 4, 5, 0.33);
+}
+
 .baner {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url("../img/baner.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 180px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .baner__title {
   width: 100%;
   text-align: center;
-  margin-top: 380px;
+  margin-top: 340px;
   color: whitesmoke;
   font-family: "Gotham Medium";
-  font-size: 153px;
+  font-size: 143px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -388,7 +586,7 @@ textarea:active {
   font-weight: 500;
   line-height: 51px;
   text-transform: uppercase;
-  letter-spacing: 21px;
+  letter-spacing: 19px;
   margin-left: 20px;
 }
 
@@ -418,7 +616,7 @@ textarea:active {
   font-size: 13px;
   font-weight: 400;
   line-height: 22px;
-  margin-top: 115px;
+  margin-top: 92px;
 }
 
 .baner__scroll-elem {
@@ -1328,6 +1526,79 @@ textarea:active {
   line-height: 24px;
   text-transform: uppercase;
   padding: 18px 60px 25px 60px;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.not_error {
+  border: 1px solid green;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: -1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+  position: relative;
+  top: 35%;
+  background-color: #fefefe;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  .modal__body {
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  .modal__body {
+    width: 90%;
+  }
+}
+
+.modal__close {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.modal__title {
+  font-family: "Gotham Book";
+  font-size: 18px;
+  color: #4a4556;
+  width: 100%;
+  text-align: center;
 }
 
 .footer {
