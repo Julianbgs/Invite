@@ -1298,6 +1298,12 @@ textarea:active {
   box-sizing: border-box;
 }
 
+@media (max-width: 990px) {
+  .tech {
+    padding-bottom: 0;
+  }
+}
+
 .tech__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1320,6 +1326,7 @@ textarea:active {
 @media (max-width: 990px) {
   .tech__descr-block {
     width: 100%;
+    padding-right: 0;
   }
 }
 
