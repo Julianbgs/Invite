@@ -6,6 +6,7 @@
   background-color: #11749e;
   padding-bottom: 130px;
   box-sizing: border-box;
+  overflow: hidden;
 
   &__double-elem {
     position: absolute;
@@ -17,7 +18,7 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    @include breakpoint(max-width 475px) {
+    @include breakpoint(max-width 660px) {
       left: 25%;
       top: 60px;
     }
@@ -34,7 +35,7 @@
     text-transform: uppercase;
     color: white;
 
-    @include breakpoint(max-width 475px) {
+    @include breakpoint(max-width 660px) {
       margin-top: 75px;
     }
   }
@@ -43,7 +44,7 @@
     width: 100%;
     margin-top: 130px;
 
-    @include breakpoint(max-width 475px) {
+    @include breakpoint(max-width 660px) {
       margin-top: 90px;
     }
   }

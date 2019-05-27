@@ -4,8 +4,9 @@
   z-index: 1;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255,255,255, 0.38);
+  overflow: hidden;
 
-  @include breakpoint(max-width 475px) {
+  @include breakpoint(max-width 990px) {
     border-bottom: none;
   }
 
@@ -43,7 +44,7 @@
       width: 18px;
       overflow: hidden;
 
-      @include breakpoint(max-width 475px) {
+      @include breakpoint(max-width 660px) {
         display: none;
       }
 
@@ -62,7 +63,7 @@
     height: 50px;
     top: 40px;
     right: 30px;
-    background-color: #f3f3f3;
+    background-color: #11749e;
     border-radius: 50%;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, .4);
     z-index: 15;
@@ -76,7 +77,7 @@
       display: block;
       height: 2px;
       width: 18px;
-      background-color: #000;
+      background-color: white;
       position: absolute;
       left: 50%;
       margin-left: -9px;

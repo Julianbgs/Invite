@@ -5,6 +5,7 @@
   height: 100%;
   padding-bottom: 110px;
   box-sizing: border-box;
+  overflow: hidden;
 
    &__elem-b {
      position: absolute;
@@ -16,7 +17,7 @@
      background-repeat: no-repeat;
      background-size: contain;
 
-     @include breakpoint(max-width 475px) {
+     @include breakpoint(max-width 660px) {
       left: 35%;
      }
    }

@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
 
-    @include breakpoint(max-width 475px) {
+    @include breakpoint(max-width 660px) {
       margin-bottom: 0;
     }
   }
@@ -64,7 +64,7 @@
     border: 1px solid white;
     padding: 15px 20px 15px 20px;
 
-    @include breakpoint(max-width 475px) {
+    @include breakpoint(max-width 660px) {
       width: 100%;
       margin-bottom: 30px;
     }

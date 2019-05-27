@@ -28,10 +28,13 @@ $(document).ready(function () {
         let menu = $('.header__menu');
         if ($(this).hasClass('js-trigger-active')) {
             $(this).removeClass('js-trigger-active');
-            menu.slideUp('slow');
+            menu.addClass('hide');
+            menu.hide();
         } else {
             $(this).addClass('js-trigger-active');
-            menu.slideDown('slow');
+            menu.addClass('show');
+            menu.removeClass('hide');
+
         }
         return false;
     });

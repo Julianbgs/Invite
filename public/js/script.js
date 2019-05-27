@@ -1,5 +1,3 @@
-
-
 function elemAnimate() {
     $('.main-animate').each(function () {
         if($(this).offset().top < $(document).scrollTop() + $(window).height() - 50 && !$(this).hasClass('animate')) {
@@ -30,10 +28,13 @@ $(document).ready(function () {
         let menu = $('.header__menu');
         if ($(this).hasClass('js-trigger-active')) {
             $(this).removeClass('js-trigger-active');
-            menu.slideUp('slow');
+            menu.addClass('hide');
+            menu.hide();
         } else {
             $(this).addClass('js-trigger-active');
-            menu.slideDown('slow');
+            menu.addClass('show');
+            menu.removeClass('hide');
+
         }
         return false;
     });
@@ -164,6 +165,8 @@ $(document).ready(function () {
         });
     });
     //close script
+
+    //map script
     if ($('#map').length > 0) {
         ymaps.ready(init);
         var myMap,
@@ -178,5 +181,6 @@ $(document).ready(function () {
             myMap.geoObjects.add(myPlacemark);
         }
     }
+    // close script
     });
 
