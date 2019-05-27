@@ -97,7 +97,7 @@
     }
 
     @include breakpoint(max-width 660px) {
-      width: 340px;
+      display: none;
     }
 
       img {

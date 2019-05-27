@@ -1404,7 +1404,7 @@ textarea:active {
 
 @media (max-width: 660px) {
   .tech__img {
-    width: 340px;
+    display: none;
   }
 }
 
