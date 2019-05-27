@@ -443,8 +443,8 @@ textarea:active {
   }
 
   100% {
-    -webkit-transform: translateX(400px);
-    transform: translateX(400px);
+    -webkit-transform: translateX(650px);
+    transform: translateX(650px);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     opacity: 0.8;
   }
@@ -459,8 +459,8 @@ textarea:active {
   }
 
   100% {
-    -webkit-transform: translateX(400px);
-    transform: translateX(400px);
+    -webkit-transform: translateX(650px);
+    transform: translateX(650px);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     opacity: 0.8;
   }
