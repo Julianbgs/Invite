@@ -38,18 +38,36 @@ $(document).ready(function () {
   //close script
 
     /*header scroll*/
-
     $(window).scroll(function(){
         let header = $('.header');
+        let scroll = $('#scroll-up');
         if(window.innerWidth > 1024) {
             if ( $(this).scrollTop() > 1  ){
                 header.addClass('js-header-fixed');
+                scroll.removeClass('display');
             } else if($(this).scrollTop() < 1 && header.hasClass("js-header-fixed")) {
                 header.removeClass('js-header-fixed');
+                scroll.addClass('display');
             }
         }
     });
     /*close script*/
+
+    //scroll-ip
+    $("#scroll-up").on("click", function (event) {
+        event.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 1500);
+    });
+    //close script
+
+    //scroll-down
+    $("#scroll-down").on("click", function (event) {
+            event.preventDefault();
+            let id  = $(this).attr('href');
+            let top = $(id).offset().top - 50;
+            $('body,html').animate({scrollTop: top}, 1500);
+    });
+    //close-script
 
     //animate
     elemAnimate();
