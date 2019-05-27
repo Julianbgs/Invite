@@ -26,8 +26,9 @@
       width: 40%;
       padding-right: 0;
 
-      @include breakpoint(max-width 768px) {
-        left: 55%;
+      @include breakpoint(max-width 990px) {
+        left: 0;
+
       }
 
       @include breakpoint(max-width 475px) {
@@ -35,7 +36,7 @@
       }
     }
 
-    @include breakpoint(max-width 475px) {
+    @include breakpoint(max-width 990px) {
       width: 100%;
       padding-right: 0;
     }
@@ -51,7 +52,7 @@
       width: 45%;
     }
 
-    @include breakpoint(max-width 768px) {
+    @include breakpoint(max-width 990px) {
       width: 60%;
     }
 
@@ -177,8 +178,8 @@
       top: -382px
     }
 
-    @include breakpoint(max-width 768px) {
-      top: -477px;
+    @include breakpoint(max-width 990px) {
+      display: none;
     }
 
     @include breakpoint(max-width 475px) {
@@ -198,8 +199,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    @include breakpoint(max-width 475px) {
-     position: relative;
+    @include breakpoint(max-width 990px) {
+   display: none;
     }
 
   }

@@ -314,7 +314,7 @@ textarea:active {
   padding-left: 223px;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .header__navigation {
     padding-left: 0;
     width: 100%;
@@ -334,14 +334,14 @@ textarea:active {
   width: 100%;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .header__menu {
     display: none;
     background-color: white;
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .header__menu li {
     width: 100%;
     margin-bottom: 10px;
@@ -357,7 +357,7 @@ textarea:active {
   font-weight: 400;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .header__menu li a {
     color: #23527c;
   }
@@ -373,7 +373,7 @@ textarea:active {
   border-bottom: 5px solid #11749e;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .active {
     border-bottom: none;
     padding-bottom: 0;
@@ -404,7 +404,7 @@ textarea:active {
   justify-content: space-between;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .header__wrapper {
     display: block;
   }
@@ -468,7 +468,7 @@ textarea:active {
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 990px) {
   .header__trigger {
     display: block;
   }
@@ -537,6 +537,11 @@ textarea:active {
   box-shadow: 1px 2px 3px rgba(5, 4, 5, 0.33);
 }
 
+.pos {
+  position: relative;
+  top: 2px;
+}
+
 .banner {
   position: relative;
   display: -webkit-box;
@@ -564,9 +569,9 @@ textarea:active {
   margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .banner__title {
-    font-size: 115px;
+    font-size: 100px;
   }
 }
 
@@ -590,7 +595,7 @@ textarea:active {
   margin-left: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .banner__sub-title {
     margin-left: 0;
   }
@@ -628,6 +633,10 @@ textarea:active {
   background-image: url("../img/scroll.png");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-animation: scroll-pos 2s;
+  animation: scroll-pos 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @media (max-width: 475px) {
@@ -650,6 +659,26 @@ textarea:active {
 
 .display {
   display: none;
+}
+
+@-webkit-keyframes scroll-pos {
+  from {
+    top: 40px;
+  }
+
+  to {
+    top: 60px;
+  }
+}
+
+@keyframes scroll-pos {
+  from {
+    top: 40px;
+  }
+
+  to {
+    top: 60px;
+  }
 }
 
 .agency {
@@ -783,9 +812,9 @@ textarea:active {
   padding-right: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .about__block--mod {
-    left: 55%;
+    left: 0;
   }
 }
 
@@ -795,7 +824,7 @@ textarea:active {
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .about__block {
     width: 100%;
     padding-right: 0;
@@ -819,7 +848,7 @@ textarea:active {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .about__comment {
     width: 60%;
   }
@@ -955,9 +984,9 @@ textarea:active {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .about__bg {
-    top: -477px;
+    display: none;
   }
 }
 
@@ -980,9 +1009,9 @@ textarea:active {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .about__new-bg {
-    position: relative;
+    display: none;
   }
 }
 
@@ -1186,7 +1215,7 @@ textarea:active {
   box-sizing: border-box;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .tech__descr-block {
     width: 100%;
   }
@@ -1252,7 +1281,7 @@ textarea:active {
   margin-top: 100px;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 990px) {
   .tech__img-block {
     width: 100%;
   }
@@ -1465,7 +1494,7 @@ textarea:active {
   margin-top: 225px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .callback__title {
     font-size: 24px;
   }
@@ -1610,11 +1639,18 @@ textarea:active {
 }
 
 .modal__title {
-  font-family: "Gotham Book";
+  font-family: "Myraid Pro";
   font-size: 18px;
   color: #4a4556;
   width: 100%;
   text-align: center;
+}
+
+.map {
+  width: 100%;
+  height: 355px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer {

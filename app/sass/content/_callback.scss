@@ -34,7 +34,7 @@
     text-transform: uppercase;
     margin-top: 225px;
 
-    @include breakpoint(max-width 768px) {
+    @include breakpoint(max-width 990px) {
       font-size: 24px;
     }
   }
@@ -155,7 +155,7 @@
 }
 
 .modal__title {
-  font-family: $GothamBook;
+  font-family: $MyraidPro;
   font-size: 18px;
   color: #4A4556;
   width: 100%;

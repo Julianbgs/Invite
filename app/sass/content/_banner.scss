@@ -22,8 +22,8 @@
       text-transform: uppercase;
       margin-bottom: 0;
 
-      @include breakpoint(max-width 768px) {
-        font-size: 115px;
+      @include breakpoint(max-width 990px) {
+        font-size: 100px;
       }
 
       @include breakpoint(max-width 475px) {
@@ -44,7 +44,7 @@
     letter-spacing: 19px;
     margin-left: 20px;
 
-    @include breakpoint(max-width 768px) {
+    @include breakpoint(max-width 990px) {
       margin-left: 0;
     }
 
@@ -78,6 +78,9 @@
         background-image: url("../img/scroll.png");
         background-size: contain;
         background-repeat: no-repeat;
+        animation: scroll-pos 2s;
+        animation-iteration-count: infinite;
+
 
         @include breakpoint(max-width 475px) {
           left: 40%;
@@ -100,4 +103,13 @@
 
 .display {
   display: none;
+}
+
+@keyframes scroll-pos {
+  from{
+    top: 40px;
+  }
+  to{
+    top: 60px;
+  }
 }

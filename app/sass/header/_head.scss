@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
 
-    @include breakpoint(max-width 475px) {
+    @include breakpoint(max-width 990px) {
       display: block;
     }
   }
@@ -68,7 +68,7 @@
     z-index: 15;
     cursor: pointer;
 
-    @include breakpoint(max-width 480px) {
+    @include breakpoint(max-width 990px) {
       display: block;
     }
 
@@ -122,4 +122,9 @@
 .js-header-fixed {
   background-color: #23527c;
   box-shadow: 1px 2px 3px rgba(5, 4, 5, 0.33);
+}
+
+.pos {
+  position: relative;
+  top: 2px;
 }

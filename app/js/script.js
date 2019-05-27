@@ -162,5 +162,19 @@ $(document).ready(function () {
         });
     });
     //close script
+    if ($('#map').length > 0) {
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init() {
+            myMap = new ymaps.Map("map", {
+                center: [56.002819, 37.802068],
+                zoom: 13
+            });
+            myPlacemark = new ymaps.Placemark([56.002819, 37.802068], {});
+            myMap.geoObjects.add(myPlacemark);
+        }
+    }
     });
 
