@@ -25,13 +25,18 @@ $(document).ready(function () {
 //mobile menu
     $(document).on('click', '#header-trigger', function (event) {
         event.preventDefault();
+        let nav = $('.header__navigation');
         let menu = $('.header__menu');
         if ($(this).hasClass('js-trigger-active')) {
             $(this).removeClass('js-trigger-active');
             menu.addClass('hide');
+            setTimeout(function(){
+                nav.addClass('display');
+            }, 1000);
             menu.hide();
         } else {
             $(this).addClass('js-trigger-active');
+            nav.removeClass('display');
             menu.addClass('show');
             menu.removeClass('hide');
 

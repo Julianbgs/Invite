@@ -308,6 +308,7 @@ textarea:active {
 }
 
 .header__navigation {
+  margin-top: 50px;
   width: -webkit-calc(100% - 79px);
   width: calc(100% - 79px);
   padding-left: 223px;
@@ -318,6 +319,7 @@ textarea:active {
     padding-left: 0;
     width: 100%;
     position: relative;
+    margin-top: 0;
   }
 }
 
@@ -338,6 +340,9 @@ textarea:active {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     opacity: 0;
     background-color: white;
+    max-height: 300px;
+    position: relative;
+    overflow: scroll;
   }
 }
 
