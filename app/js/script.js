@@ -162,6 +162,8 @@ $(document).ready(function () {
         });
     });
     //close script
+
+    //map script
     if ($('#map').length > 0) {
         ymaps.ready(init);
         var myMap,
@@ -176,5 +178,6 @@ $(document).ready(function () {
             myMap.geoObjects.add(myPlacemark);
         }
     }
+    // close script
     });
 
