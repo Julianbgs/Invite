@@ -25,7 +25,7 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.1",
     "gulp-uglifyjs": "^0.6.2",
-    "gulp.spritesmith": "^6.9.0",
+    "gulp.spritesmith": "^6.13.0",
     "imagemin-pngquant": "^5.0.1",
     "pngquant-bin": "^3.1.1",
     "postcss-assets": "^5.0.0",
